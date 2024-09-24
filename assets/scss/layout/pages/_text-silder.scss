@@ -1,0 +1,62 @@
+@use '../../utils' as *;
+
+.text-slider {
+    background-color: #2F2F2F;
+
+  &__section-space {
+    padding: 25px 0;
+  }
+
+  &__slider {
+    .carouselTicker {
+      margin: 0;
+      padding: 0;
+      margin-left: calc(-100vw/2 + 100%/2);
+      margin-right: calc(-100vw/2 + 100%/2);
+
+      &__wrap {
+        overflow: inherit !important;
+      }
+
+      &__list {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style: none;
+        margin-left: -10px;
+        margin-right: -10px;
+        align-items: center;
+        display: -webkit-box;
+        justify-content: center;
+        gap: 10px;
+
+        li {
+          float: left;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          .title {
+            font-style: normal;
+            font-weight: 800;
+            color: rgb(255 255 255 / 50%);
+            font-size: 80px;
+            line-height: 90px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color: rgb(255 255 255 / 50%);
+            font-family: var(--rr-ff-body);
+
+            &:hover {
+                -webkit-text-stroke-color: var(--rr-theme-primary);
+                
+            }
+          }
+
+          img {
+            margin-top: -30px;
+          }
+        }
+      }
+    }
+  }
+}
