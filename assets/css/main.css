@@ -132,7 +132,7 @@
 /*----------------------------------------*/
 /*  1.1 Theme Default
 /*----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 .projects__nav-tabs .nav-link::after, .projects__text-top, .projects__text-bottom, .projects__arrow, .about-us-2__nav-tabs .nav-link::after, .latest-article__item, .latest-article__media img, .latest-article__meta li a, .latest-article__slider-dot .swiper-pagination-bullet, .team-details__social ul li a, .protfolio__item::before, .protfolio__item-icon, .protfolio__item-text, .testimonial-2__author-text h6, .testimonial-2__slider-dot .swiper-pagination-bullet, .our-work-precess-2__item, .our-work-precess-2__icon, .our-featured-service__media img, .our-featured-service__icon, .working-process__icon, .working-process__icon .number, .team-member__media::before, .team-member__socail-media, .team-member__content, .recent-project__item, .recent-project__media::before, .recent-project__media img, .recent-project__arrow, .expert__item, .expert__slider-dot .swiper-pagination-bullet, .latest-project__media img, .latest-project__media .icon, .our-team__item-media::before, .our-team__item-media::after, .our-team__item__text, .our-team__item__socail, .our-team__item__socail a, .testimonial__slider-dot .swiper-pagination-bullet, .footer-3__contact ul li .text a, .footer-2__gallery a i, .footer-2__gallery a:after, .footer__support .text a, .footer__contact ul li .text a, .footer__post-item__content-title, .footer-3__copyright-menu ul li::before, .footer-3__copyright-menu ul li a, .footer-2__copyright-menu ul li::before, .footer-2__copyright-menu ul li a, .footer__copyright-menu ul li::before, .footer__copyright-menu ul li a, .blog-details__tag-list li a, .blog-details__sheir-icon li a i.fa-twitter, .blog-details__sheir-icon li a i.fa-facebook-f, .blog-details__sheir-icon li a i.fa-linkedin-in, .blog-details__sheir-icon li a i.fa-pinterest, .blog-grid__media img, .sidebar__widget-category a, .sidebar__widget-tags .tags a, .blog-3__pagination li a, .blog-2__media img, .blog__item-media img, .mean-container .mean-nav ul li > a.mean-expand i, .main-menu ul li.has-dropdown > a::after, .main-menu ul li .submenu, .main-menu ul li .submenu li a::before, .main-menu ul li .mega-menu, .main-menu ul li .mega-menu li ul li a::before, .banner__slider__arrow-prev, .banner__slider__arrow-next, .banner__slider__arrow-prev svg path, .banner__slider__arrow-next svg path, .banner__item:after, .banner__item::before, .header-3 .header__top, .header-3 .header__top-menu li::before, .header-3 .header__top__lang-select::before, .header-2 .header__top, .header-2 .header__top__lang-select::before, .offcanvas__overlay, .offcanvas__navigation button svg, .rr-btn__header .btn-wrap .text-one, .rr-btn__header .btn-wrap .text-two, .rr-btn .btn-wrap .text-one, .rr-btn .btn-wrap .text-two, .body__overlay, a,
 .btn,
 button,
@@ -401,8 +401,8 @@ svg path {
   /**
   @font family declaration
   */
-  --rr-ff-body:  'DM Sans', sans-serif;
-  --rr-ff-heading:  'Outfit', sans-serif;
+  --rr-ff-body:  'Almarai', sans-serif;
+  --rr-ff-heading:  'Almarai', sans-serif;
   --rr-ff-fontawesome: "Font Awesome 6 Pro";
   /**
   @color declaration
@@ -6533,7 +6533,7 @@ body .ui-tooltip {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(97.08deg, rgba(216, 122, 39, 0.285) 1.96%, rgba(8, 10, 11, 0.285) 62.12%);
+  background: linear-gradient(97.08deg, rgba(8, 10, 11, 0.285) 1.96%, rgba(216, 122, 39, 0.285) 62.12%);
   mix-blend-mode: hard-light;
 }
 .banner__item::before {
@@ -6544,7 +6544,7 @@ body .ui-tooltip {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(95.68deg, rgba(182, 89, 6, 0.18) 28.66%, rgba(43, 24, 7, 0.18) 75.01%);
+  background: linear-gradient(95.68deg, rgba(43, 24, 7, 0.18) 28.66%, rgba(182, 89, 6, 0.18) 75.01%);
   mix-blend-mode: color-burn;
 }
 .banner__item__left-bg {
@@ -6553,9 +6553,8 @@ body .ui-tooltip {
   height: 848px;
   left: -340px;
   top: -222px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(188, 104, 26, 0.24)), to(rgba(188, 104, 26, 0.24))), rgba(211, 114, 28, 0.24);
-  background: linear-gradient(0deg, rgba(188, 104, 26, 0.24), rgba(188, 104, 26, 0.24)), rgba(211, 114, 28, 0.24);
-  mix-blend-mode: color;
+  background: rgba(211, 114, 28, 0.4);
+  mix-blend-mode: multiply;
   -webkit-filter: blur(175px);
           filter: blur(175px);
 }
@@ -6565,8 +6564,9 @@ body .ui-tooltip {
   height: 833px;
   top: 0;
   right: 0;
-  background: rgba(211, 114, 28, 0.4);
-  mix-blend-mode: multiply;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(188, 104, 26, 0.24)), to(rgba(188, 104, 26, 0.24))), rgba(211, 114, 28, 0.24);
+  background: linear-gradient(0deg, rgba(188, 104, 26, 0.24), rgba(188, 104, 26, 0.24)), rgba(211, 114, 28, 0.24);
+  mix-blend-mode: color;
   -webkit-filter: blur(125px);
           filter: blur(125px);
   top: -316px;
@@ -6608,7 +6608,7 @@ body .ui-tooltip {
   }
 }
 .banner__item-title {
-  font-size: 60px;
+  font-size: 70px;
   line-height: 75px;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -6642,7 +6642,7 @@ body .ui-tooltip {
   }
 }
 .banner__item-title span {
-  font-weight: 300;
+  font-weight: 400;
 }
 .banner__item .des {
   font-style: normal;
@@ -6681,15 +6681,15 @@ body .ui-tooltip {
   top: 45%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          transform: translate(50%, -50%);
 }
 @media (max-width: 575px) {
   .banner__item-content-link {
     top: 140%;
-    right: inherit;
-    left: 0;
+    left: inherit;
+    right: 0;
     position: absolute;
-    -webkit-transform: translate(50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 }
 .banner__item-content-link .popup-video .icon {
@@ -6846,7 +6846,7 @@ body .ui-tooltip {
   z-index: 9;
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   padding: 21px 75px;
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(15px);
@@ -6913,7 +6913,7 @@ body .ui-tooltip {
   }
 }
 .banner__socail-media ul li a {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 28px;
   color: var(--rr-common-white);
   text-transform: uppercase;
@@ -7694,7 +7694,7 @@ body .ui-tooltip {
   color: var(--rr-common-white);
   font-family: var(--rr-ff-heading);
   font-weight: var(--rr-fw-medium);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -9565,7 +9565,7 @@ body .ui-tooltip {
 }
 .footer__copyright-menu ul li::before {
   content: "";
-  right: -10px;
+  left: -10px;
   width: 1px;
   height: 14px;
   position: absolute;
@@ -9992,7 +9992,7 @@ body .ui-tooltip {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .footer__widget.footer__widget-item-2 {
-    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .footer__widget.footer__widget-item-3 {
@@ -10008,7 +10008,7 @@ body .ui-tooltip {
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .footer__widget.footer__widget-item-3 {
     margin-left: 0px;
-    padding-left: 0;
+    padding-right: 0;
     margin-right: 0;
   }
 }
@@ -10038,7 +10038,7 @@ body .ui-tooltip {
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .footer__widget.footer__widget-item-4 {
     margin-left: 0px;
-    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -11507,7 +11507,7 @@ body .ui-tooltip {
   }
 }
 .why-choose-us__media.img3 {
-  border-radius: 0px 70px 0px 0px;
+  border-radius: 70px 0px 0px 0px;
 }
 
 .about-us__media {
@@ -11539,7 +11539,7 @@ body .ui-tooltip {
 }
 @media (max-width: 575px) {
   .about-us__box {
-    right: 1px;
+    left: 1px;
     bottom: 1px;
     top: inherit;
     width: 225px;
@@ -11547,11 +11547,14 @@ body .ui-tooltip {
     height: 88px;
   }
 }
-.about-us__box h6 {
-  font-weight: var(--rr-fw-sbold);
+.about-us__box h2 {
+  font-weight: var(--rr-fw-black);
   font-family: var(--rr-ff-body);
 }
-.about-us__box h4 span {
+.about-us__box h6 {
+  font-weight: var(--rr-fw-black);
+}
+.about-us__box h2 span {
   font-family: var(--rr-ff-body);
   letter-spacing: 2px;
 }
@@ -11756,7 +11759,7 @@ body .ui-tooltip {
 }
 @media (max-width: 575px) {
   .filter__container {
-    height: 200px;
+    height: 300px;
   }
 }
 .filter__container .pic {
@@ -11792,8 +11795,8 @@ body .ui-tooltip {
 
 .what-we-do__wrapper {
   background-color: #F8F8F8;
-  margin-left: -120px;
-  margin-right: -120px;
+  margin-left: -100px;
+  margin-right: -100px;
   padding-left: 120px;
   padding-right: 120px;
   padding-top: 108px;
@@ -11806,8 +11809,8 @@ body .ui-tooltip {
   .what-we-do__wrapper {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 30px;
-    padding-right: 0;
+    padding-right: 30px;
+    padding-left: 10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -12677,7 +12680,7 @@ body .ui-tooltip {
   height: 100%;
   position: absolute;
   -webkit-transform: translate(80%, 25%);
-          transform: translate(80%, 25%);
+          transform: translate(-33%, 25%);
   background-repeat: no-repeat;
   background-image: url(../../assets/imgs/working-process/shape.svg);
 }
