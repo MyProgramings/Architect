@@ -412,10 +412,13 @@ svg path {
   --rr-common-placeholder: #767676;
   --rr-common-selection: #3C66FA;
   --rr-color-white: #fff;
-  --rr-body-primary: #ffffff;
+  --rr-body-primary: #0f0c0c;
   --rr-theme-primary: #906E50;
+  --rr-theme-dark: #6d4a2c;
   --rr-heading-primary: #080A0B;
-  --rr-text-body: #767676;
+  --rr-header-primary: #0f0c0c;
+  --rr-text-body: #e0e0e0;
+  --rr-text-title: #e9e9e9;
   --rr-text-p: #767676;
   --rr-menu-primary: #080A0B;
   --rr-menu-white: #FFFFFF;
@@ -517,7 +520,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-family: var(--rr-ff-heading);
-  color: var(--rr-heading-primary);
+  color: var(--rr-text-title);
   margin-top: 0;
   margin-bottom: 0;
   font-weight: var(--rr-fw-bold);
@@ -1535,7 +1538,7 @@ a:hover {
 }
 
 .theme-bg-heading-primary {
-  background-color: var(--rr-heading-primary);
+  background-color: var(--rr-header-primary);
 }
 
 .section-bg-1 {
@@ -1884,10 +1887,10 @@ a:hover {
   display: inline-block;
 }
 .offcanvas__social ul li:not(:last-child) {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 .offcanvas__social ul li a {
-  color: var(--rr-theme-secondary);
+  color: var(--rr-theme-dark);
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -2075,6 +2078,9 @@ a:hover {
   font-size: 24px;
   line-height: 40px;
   color: var(--rr-theme-primary);
+}
+.section__subtitle_dark {
+  color: var(--rr-body-primary);
 }
 @media (max-width: 575px) {
   .section__subtitle {
@@ -5714,7 +5720,7 @@ body .ui-tooltip {
           backdrop-filter: blur(15px);
 }
 .header-1.rr-sticky {
-  background-color: var(--rr-heading-primary);
+  background-color: var(--rr-header-primary);
 }
 @media (min-width: 1400px) {
   .header-1 .container,
@@ -9874,7 +9880,7 @@ body .ui-tooltip {
 
 .footer__top {
   padding: 51px 0;
-  background-color: #906E50;
+  background-color: var(--rr-theme-dark);
   position: relative;
   overflow: hidden;
   z-index: 2;
@@ -10908,7 +10914,7 @@ body .ui-tooltip {
 /*  8.1 brand
 /*----------------------------------------*/
 .brand {
-  background-color: #F5F5F5;
+  background-color: var(--rr-common-black);
 }
 .brand.has--transparent {
   background-color: transparent;
@@ -11096,7 +11102,7 @@ body .ui-tooltip {
 .testimonial__item {
   padding: 30px;
   border: 1px solid rgba(8, 10, 11, 0.1);
-  background-color: var(--rr-common-white);
+  background-color: var(--rr-common-black);
 }
 .testimonial__item-wrapper {
   gap: 20px;
@@ -11471,8 +11477,11 @@ body .ui-tooltip {
 .why-choose-us__icon {
   margin-top: 8px;
 }
+.why-choose-us__icon img{
+  width: 50px;
+}
 .why-choose-us__text h6 {
-  color: var(--rr-common-black);
+  color: var(--rr-theme-primary);
   font-weight: var(--rr-fw-sbold);
 }
 .why-choose-us__media {
@@ -11537,6 +11546,7 @@ body .ui-tooltip {
   -webkit-box-shadow: inset 0px 4px 0px #906E50;
           box-shadow: inset 0px 4px 0px #906E50;
 }
+
 @media (max-width: 575px) {
   .about-us__box {
     left: 1px;
@@ -11548,11 +11558,13 @@ body .ui-tooltip {
   }
 }
 .about-us__box h2 {
-  font-weight: var(--rr-fw-black);
+  font-weight: var(--rr-fw-bold);
   font-family: var(--rr-ff-body);
+  color: #000;
 }
 .about-us__box h6 {
-  font-weight: var(--rr-fw-black);
+  font-weight: var(--rr-fw-bold);
+  color: #000;
 }
 .about-us__box h2 span {
   font-family: var(--rr-ff-body);
@@ -11658,7 +11670,7 @@ body .ui-tooltip {
   font-weight: 400;
   font-size: 16px;
   line-height: 36px;
-  color: var(--rr-heading-primary);
+  color: var(--rr-text-title);
 }
 
 .latest-project .des {
@@ -11794,7 +11806,7 @@ body .ui-tooltip {
 }
 
 .what-we-do__wrapper {
-  background-color: #F8F8F8;
+  background-color: #1d1414;
   margin-left: -100px;
   margin-right: -100px;
   padding-left: 120px;
@@ -11845,7 +11857,7 @@ body .ui-tooltip {
   --bs-gutter-x: 0px;
 }
 .what-we-do .has--border-2, .what-we-do .has--border-5 {
-  border: 1px solid rgba(1, 9, 21, 0.14);
+  border: 1px solid #fff;
   border-top: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -11854,7 +11866,7 @@ body .ui-tooltip {
   }
 }
 .what-we-do .has--border-1, .what-we-do .has--border-3 {
-  border-bottom: 1px solid rgba(1, 9, 21, 0.14);
+  border-bottom: 1px solid #fff;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .what-we-do .has--border-1, .what-we-do .has--border-3 {
@@ -11866,7 +11878,7 @@ body .ui-tooltip {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .what-we-do .has--border-2, .what-we-do .has--border-3, .what-we-do .has--border-5, .what-we-do .has--border-6 {
-    padding-left: 0;
+    padding-right: 0;
   }
 }
 .what-we-do .has--border-5 {
@@ -12625,7 +12637,7 @@ body .ui-tooltip {
 }
 
 .working-process__background {
-  background-color: #F5F5F5;
+  background-color: var(--rr-theme-dark);
   padding-top: 303px;
   padding-bottom: 80px;
   margin-top: -318px;
@@ -12704,7 +12716,7 @@ body .ui-tooltip {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 500px;
-  border: 1px dashed rgba(8, 10, 11, 0.3);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 0px 60px rgba(21, 24, 27, 0.1));
           filter: drop-shadow(0px 0px 60px rgba(21, 24, 27, 0.1));
 }
@@ -12737,13 +12749,13 @@ body .ui-tooltip {
           justify-content: center;
   border-radius: 500px;
   font-family: var(--rr-ff-heading);
-  background: #F4F1EE;
+  background: #000;
   border: 1px dashed rgba(8, 10, 11, 0.3);
 }
 .working-process__icon:hover {
   background-color: var(--rr-common-white);
 }
-.working-process__icon:hover svg [fill="#080A0B"] {
+.working-process__icon:hover svg [fill="#fff"] {
   fill: var(--rr-theme-primary);
 }
 .working-process__icon:hover .number {
