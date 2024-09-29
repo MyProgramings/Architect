@@ -412,13 +412,13 @@ svg path {
   --rr-common-placeholder: #767676;
   --rr-common-selection: #3C66FA;
   --rr-color-white: #fff;
-  --rr-body-primary: #0f0c0c;
-  --rr-theme-primary: #906E50;
+  --rr-body-primary: #171717;
+  --rr-theme-primary: #b89564;
   --rr-theme-dark: #6d4a2c;
   --rr-heading-primary: #080A0B;
-  --rr-header-primary: #0f0c0c;
+  --rr-header-primary: #171717;
   --rr-text-body: #e0e0e0;
-  --rr-text-title: #e9e9e9;
+  --rr-text-title: #baae9b;
   --rr-text-p: #767676;
   --rr-menu-primary: #080A0B;
   --rr-menu-white: #FFFFFF;
@@ -6476,6 +6476,7 @@ body .ui-tooltip {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .banner__slider__arrow {
+    display: none;
     padding: 10px 15px;
     gap: 35px;
   }
@@ -6488,6 +6489,7 @@ body .ui-tooltip {
 }
 @media (max-width: 575px) {
   .banner__slider__arrow {
+    display: none;
     border-right: none;
   }
 }
@@ -11811,7 +11813,6 @@ body .ui-tooltip {
 }
 
 .what-we-do__wrapper {
-  background-color: #1d1414;
   margin-left: -100px;
   margin-right: -100px;
   padding-left: 120px;
