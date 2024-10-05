@@ -13726,7 +13726,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 @media (max-width: 575px) {
   .filter__container {
-    height: 300px;
+    height: 165px;
   }
 }
 
